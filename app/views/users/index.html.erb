@@ -5,7 +5,14 @@
 <div class='main' ng-controller='UserController'>
   <p>{{ name }}</p>
   <p>{{ age }}</p>
+  <p ng-click='plusOne($index)'>+ {{ likes }} likes</p>
+
+  <div class='looping' ng-repeat='user in users'>
+    <p>name: {{ user.name }}</p>
+    <p>age: {{ user.age }}</p>
+  </div>
 </div>
+
 
 <table>
   <thead>
